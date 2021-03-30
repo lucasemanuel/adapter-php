@@ -2,16 +2,16 @@
 
 namespace App;
 
-class RoundPeg implements PegInterface
+class RoundPeg
 {
     private $radius;
 
-    public function __construct(int $radius)
+    public function __construct(float $radius)
     {
         $this->radius = $radius;
     }
 
-    public function getRadius(): int 
+    public function getRadius(): float 
     {
         return $this->radius;
     }

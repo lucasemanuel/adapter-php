@@ -6,17 +6,17 @@ class RoundHole
 {
     private $radius;
 
-    public function __construct(int $radius)
+    public function __construct(float $radius)
     {
         $this->radius = $radius;
     }
 
-    public function getRadius(): int
+    public function getRadius(): float
     {
         return $this->radius;
     }
 
-    public function fits(PegInterface $roundPeg): bool
+    public function fits($roundPeg): bool
     {
         return $this->radius >= $roundPeg->getRadius();
     }
